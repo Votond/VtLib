@@ -52,22 +52,22 @@ repositories {
 
 dependencies {
     // Base
-    implementation(kotlin("stdlib"))
+    api(kotlin("stdlib"))
     compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
-    implementation("com.charleskorn.kaml:kaml:0.78.0")
+    api("com.charleskorn.kaml:kaml:0.78.0")
     // Convenient commands API
     // Do not change the version
     val commandApiVersion = "9.7.0"
-    implementation("dev.jorel:commandapi-bukkit-shade:$commandApiVersion")
-    implementation("dev.jorel:commandapi-bukkit-kotlin:$commandApiVersion")
+    api("dev.jorel:commandapi-bukkit-shade:$commandApiVersion")
+    api("dev.jorel:commandapi-bukkit-kotlin:$commandApiVersion")
     // Inventory API
-    implementation("com.github.stefvanschie.inventoryframework:IF:0.11.0")
+    api("com.github.stefvanschie.inventoryframework:IF:0.11.0")
     // Rich text support
     val adventureVersion = "4.21.0"
-    implementation("net.kyori:adventure-platform-bukkit:4.4.0")
-    implementation("net.kyori:adventure-api:$adventureVersion")
-    implementation("net.kyori:adventure-text-minimessage:$adventureVersion")
-    implementation("net.kyori:adventure-text-serializer-legacy:$adventureVersion")
+    api("net.kyori:adventure-platform-bukkit:4.4.0")
+    api("net.kyori:adventure-api:$adventureVersion")
+    api("net.kyori:adventure-text-minimessage:$adventureVersion")
+    api("net.kyori:adventure-text-serializer-legacy:$adventureVersion")
     // Do not change the version
     compileOnly("com.mojang:authlib:1.5.21")
 }
