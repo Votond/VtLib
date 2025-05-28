@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.1.21"
+    kotlin("plugin.serialization") version "2.1.21" // for kaml
     id("com.gradleup.shadow") version "8.3.6"
     id("de.eldoria.plugin-yml.bukkit") version "0.7.1"
 }
@@ -53,10 +54,7 @@ dependencies {
     // Base
     api(kotlin("stdlib"))
     compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
-    api("com.charleskorn.kaml:kaml:0.78.0") {
-        exclude("org.jetbrains.kotlinx", "kotlinx-serialization-core")
-    }
-    api("org.jetbrains.kotlinx:kotlinx-serialization-core:1.8.1")
+    api("com.charleskorn.kaml:kaml:0.78.0")
     // Convenient commands API
     // Do not change the version
     val commandApiVersion = "9.7.0"
