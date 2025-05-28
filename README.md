@@ -1,0 +1,1 @@
+# Utility library for Bukkit plugin development

@@ -12,7 +12,7 @@ kotlin {
 
 group = "me.votond.vtlib"
 description = "Utility library for Bukkit plugin development"
-version = "1.0"
+version = "1.0.0"
 
 bukkit {
     name = "VtLib"
@@ -32,10 +32,6 @@ tasks {
 
 repositories {
     mavenCentral()
-    maven {
-        name = "PaperMC"
-        url = uri("https://repo.papermc.io/repository/maven-public/")
-    }
     maven {
         name = "SpigotMC"
         url = uri("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
